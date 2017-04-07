@@ -1,0 +1,1133 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>Bible Prophecy Jquery</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        #times { 
+            background-color: red;
+        }
+        #sacrifice { 
+            background-color: orange;
+        }
+        #horn { 
+            background-color: aqua;
+        } 
+        #times_link, #sacrifice_link, #horn_link {
+            font-size: 16px;
+        }
+        .lb-md {
+            font-size: 16px;
+        }
+        .lb-lg {
+            font-size: 20px;
+        }      
+</style>
+<script type="text/javascript" >
+    var showTimes = false;
+    var showHorn = false;
+    var showSacrifice = false;
+
+    $(document).ready(function () {
+        setInitState();
+        /****** button click events *******/
+        /* times */
+        $("#times_link").click(function () {
+            if (showTimes) { $("#whole_text").hide(); $("#sacrifice_text").hide(); $("#horn_text").hide(); $("#times_text").show(); }
+            else { $("#whole_text").show(); $("#times_text").hide(); $("#sacrifice_text").hide(); $("#horn_text").hide(); }
+            showTimes =! showTimes;            
+        });        
+        /* sacrifice */
+        $("#sacrifice_link").click(function () {
+            if (showSacrifice) { $("#whole_text").hide(); $("#horn_text").hide(); $("#times_text").hide(); $("#sacrifice_text").show(); }
+            else { $("#whole_text").show(); $("#sacrifice_text").hide(); $("#horn_text").hide(); $("#times_text").hide(); }            
+            showSacrifice =! showSacrifice;
+        });        
+        /* horn */
+        $("#horn_link").click(function () {
+            if (showHorn) { $("#whole_text").hide(); $("#sacrifice_text").hide(); $("#times_text").hide(); $("#horn_text").show(); }
+            else { $("#whole_text").show(); $("#horn_text").hide(); $("#sacrifice_text").hide(); $("#times_text").hide(); }
+            showHorn =! showHorn;
+        });                        
+    });
+
+    function setInitState(){
+        $("#times_text").hide();
+        $("#horn_text").hide();
+        $("#sacrifice_text").hide();        
+    }
+</script>
+</head>
+<body>
+
+<span class="label label-danger" id="times_link">times</span>
+<span class="label label-warning" id="sacrifice_link">sacrifice</span>
+<span class="label label-info" id="horn_link">little horn</span>
+
+<div id="horn_text">
+
+    <table class="table table-bordered">
+    <caption>The Book of Daniel</caption>
+    <tr>
+        <th>four beasts</th>
+        <th>ram & goat</th>
+        <th>summary</th>
+        <th>blank</th>
+    </tr>
+
+    <tr>
+    <td width="20%">
+        <p>
+        7:8 I considered the horns, and, behold, there came up among them
+        another <span id="horn">little horn</span>, before whom there were three of the first horns
+        plucked up by the roots: and, behold, <span id="horn">in this horn were eyes</span> like the
+        eyes of man, and a mouth speaking great things.
+        </p><p>
+        7:11 I beheld then because of the voice of <span id="horn">the great words which the
+        horn spake</span>: I beheld even till the beast was slain, and his body
+        destroyed, and given to the burning flame.
+        </p><p>
+        7:19 Then I would know the truth of the fourth beast, which was
+        diverse from all the others, exceeding dreadful, whose teeth were of
+        iron, and his nails of brass; which devoured, brake in pieces, and
+        stamped the residue with his feet; 7:20 And of the ten horns that were
+        in his head, and of <span id="horn">the other which came up</span>, and before whom three
+        fell; even of that horn that had eyes, and a mouth that spake very
+        great things, whose look was more stout than his fellows.
+        </p><p>
+        7:24 And the ten horns out of this kingdom are ten kings that shall
+        arise: and <span id="horn">another shall rise after them</span>; and he shall be diverse from
+        the first, and he shall subdue three kings.
+        </p></td width="20%"><td><p>
+        8:9 And out of one of them came forth <span id="horn">a little horn</span>, which waxed
+        exceeding great, toward the south, and toward the east, and toward the
+        pleasant land.
+        </p><p>
+        8:10 <span id="horn">And it waxed great</span>, even to the host of heaven; and it cast down
+        some of the host and of the stars to the ground, and stamped upon
+        them.
+        </p><p>
+        8:11 Yea, <span id="horn">he magnified himself</span> even to the prince of the host, and by
+        him <span id="sacrifice">the daily sacrifice</span> was taken away, and the place of the sanctuary
+        was cast down.
+        </p><p>
+        8:12 And <span id="horn">an host was given him</span> against <span id="sacrifice">the daily sacrifice</span> by reason
+        of transgression, and it cast down the truth to the ground; and it
+        practised, and prospered.
+        </p>
+    </td>
+    <td width="25%">
+        <p>four beasts</p>
+            <ul>
+                <li>there were three of the first horns plucked up by the roots</il>
+                <li>behold, in this horn were eyes like the eyes of man</il>
+                <li>and a mouth speaking great things</il>
+                <li>the voice of the great words which the horn spake</li>
+            </ul>
+        <p>ram & goat</p>
+            <ul>
+                <li>waxed exceeding great, toward the south, and toward the east, and toward the pleasant land</il>
+                <li>it waxed great, even to the host of heaven</li>
+                <li>it cast down some of the host and of the stars to the ground, and stamped upon them</il>
+                <li>he magnified himself even to the prince of the host</li>
+                <li>by him the daily sacrifice was taken away</li>
+                <li>the place of the sanctuary was cast down.</il>
+                <li>an host was given him against the daily sacrifice by reason of transgression</li>
+                <li>it cast down the truth to the ground</li>
+                <li>it practised, and prospered.</li>
+            </ul>        
+        </p>
+    </td>
+    <td width="35%">
+        <p></p>
+    </td>    
+    </tr>
+    </table>
+</div>
+<div id="times_text">
+
+    <table class="table table-bordered">
+    <caption>The Book of Daniel</caption>
+    <tr>
+        <th>four beasts</th>
+        <th>time of trouble</th>
+        <th>north south</th>
+        <th>time of trouble</th>
+        <th>summary</th>
+    </tr>
+
+    <tr>
+    <td width="20%">
+    <p>
+        7:25 And he shall speak great words against the most High, and shall
+        wear out the saints of the most High, and think to change times and
+        laws: and they shall be given into his hand until <span id="times">a time and times and
+        the dividing of time.</span>
+    </p>
+    </td>
+    <td width="20%">
+    <p>
+        12:6 And one said to the man clothed in linen, which was upon the
+        waters of the river, How long shall it be to the end of these wonders?
+        12:7 And I heard the man clothed in linen, which was upon the waters
+        of the river, when he held up his right hand and his left hand unto
+        heaven, and sware by him that liveth for ever that it shall be for <span id="times">a
+        time, times, and an half</span>; and when he shall have accomplished to
+        scatter the power of the holy people, all these things shall be
+        finished.
+    </p>
+    <p>
+        12:11 And from the time that <span id="sacrifice">the daily sacrifice</span> shall be taken away,
+        and the abomination that maketh desolate set up, there shall be <span id="times">a
+        thousand two hundred and ninety days.</span>
+    </p>
+    <p>
+        12:12 Blessed is he that waiteth, and cometh to the <span id="times">thousand three
+        hundred and five and thirty days.</span>
+    </p>    
+    </td>
+    <td width="20%">
+
+    </td>
+    <td width="20%"><p></p></td>    
+    <td width="20%">
+
+        <p>four beasts</p>
+            <ul>
+                <li>there were three of the first horns plucked up by the roots</il>
+                <li>behold, in this horn were eyes like the eyes of man</il>
+                <li>and a mouth speaking great things</il>
+                <li>the voice of the great words which the horn spake</li>
+            </ul>
+        <p>ram & goat</p>
+            <ul>
+                <li>waxed exceeding great, toward the south, and toward the east, and toward the pleasant land</il>
+                <li>it waxed great, even to the host of heaven</li>
+                <li>it cast down some of the host and of the stars to the ground, and stamped upon them</il>
+                <li>he magnified himself even to the prince of the host</li>
+                <li>by him the daily sacrifice was taken away</li>
+                <li>the place of the sanctuary was cast down.</il>
+                <li>an host was given him against the daily sacrifice by reason of transgression</li>
+                <li>it cast down the truth to the ground</li>
+                <li>it practised, and prospered.</li>
+            </ul>        
+        </p>
+
+    </td> 
+    </tr>
+    </table>
+
+</div>
+<div id="sacrifice_text">
+
+
+    <table class="table table-bordered">
+    <caption>The Book of Daniel</caption>
+    <tr>
+        <th>ram & goat</th>
+        <th>prayer</th>
+        <th>north south</th>
+        <th>time of trouble</th>
+        <th>summary</th>
+    </tr>
+
+    <tr>
+    <td width="20%">
+        <p>
+        7:8 I considered the horns, and, behold, there came up among them
+        another <span id="horn">little horn</span>, before whom there were three of the first horns
+        plucked up by the roots: and, behold, <span id="horn">in this horn were eyes</span> like the
+        eyes of man, and a mouth speaking great things.
+        </p><p>
+        7:11 I beheld then because of the voice of <span id="horn">the great words which the
+        horn spake</span>: I beheld even till the beast was slain, and his body
+        destroyed, and given to the burning flame.
+        </p><p>
+        7:19 Then I would know the truth of the fourth beast, which was
+        diverse from all the others, exceeding dreadful, whose teeth were of
+        iron, and his nails of brass; which devoured, brake in pieces, and
+        stamped the residue with his feet; 7:20 And of the ten horns that were
+        in his head, and of <span id="horn">the other which came up</span>, and before whom three
+        fell; even of that horn that had eyes, and a mouth that spake very
+        great things, whose look was more stout than his fellows.
+        </p><p>
+        7:24 And the ten horns out of this kingdom are ten kings that shall
+        arise: and <span id="horn">another shall rise after them</span>; and he shall be diverse from
+        the first, and he shall subdue three kings.
+        </p>
+    </td>
+    <td width="20%">
+        <p>
+        8:9 And out of one of them came forth <span id="horn">a little horn</span>, which waxed
+        exceeding great, toward the south, and toward the east, and toward the
+        pleasant land.
+        </p><p>
+        8:10 <span id="horn">And it waxed great</span>, even to the host of heaven; and it cast down
+        some of the host and of the stars to the ground, and stamped upon
+        them.
+        </p><p>
+        8:11 Yea, <span id="horn">he magnified himself</span> even to the prince of the host, and by
+        him <span id="sacrifice">the daily sacrifice</span> was taken away, and the place of the sanctuary
+        was cast down.
+        </p><p>
+        8:12 And <span id="horn">an host was given him</span> against <span id="sacrifice">the daily sacrifice</span> by reason
+        of transgression, and it cast down the truth to the ground; and it
+        practised, and prospered.
+        </p>
+    </td>
+    <td width="20%">
+
+    </td>
+    <td width="20%"><p></p></td>    
+    <td width="20%">
+
+        <p>four beasts</p>
+            <ul>
+                <li>there were three of the first horns plucked up by the roots</il>
+                <li>behold, in this horn were eyes like the eyes of man</il>
+                <li>and a mouth speaking great things</il>
+                <li>the voice of the great words which the horn spake</li>
+            </ul>
+        <p>ram & goat</p>
+            <ul>
+                <li>waxed exceeding great, toward the south, and toward the east, and toward the pleasant land</il>
+                <li>it waxed great, even to the host of heaven</li>
+                <li>it cast down some of the host and of the stars to the ground, and stamped upon them</il>
+                <li>he magnified himself even to the prince of the host</li>
+                <li>by him the daily sacrifice was taken away</li>
+                <li>the place of the sanctuary was cast down.</il>
+                <li>an host was given him against the daily sacrifice by reason of transgression</li>
+                <li>it cast down the truth to the ground</li>
+                <li>it practised, and prospered.</li>
+            </ul>        
+        </p>
+
+    </td> 
+    </tr>
+    </table>
+
+
+</div>
+<div id="whole_text">
+    <table class="table table-bordered">
+    <caption>The Book of Daniel</caption>
+    <tr><th>statue</th><th>four beasts</th><th>ram & goat</th><th>prayer</th><th>north south</th><th>time of
+    trouble</th></tr>
+    <tr><td>
+    <p>
+    2:31 Thou, O king, sawest, and behold a great image. This great image,
+    whose brightness was excellent, stood before thee; and the form
+    thereof was terrible.
+    </p><p>
+    2:32 This image's head was of fine gold, his breast and his arms of
+    silver, his belly and his thighs of brass, 2:33 His legs of iron, his
+    feet part of iron and part of clay.
+    </p><p>
+    2:34 Thou sawest till that a stone was cut out without hands, which
+    smote the image upon his feet that were of iron and clay, and brake
+    them to pieces.
+    </p><p>
+    2:35 Then was the iron, the clay, the brass, the silver, and the gold,
+    broken to pieces together, and became like the chaff of the summer
+    threshingfloors; and the wind carried them away, that no place was
+    found for them: and the stone that smote the image became a great
+    mountain, and filled the whole earth.
+    </p><p>
+    2:36 This is the dream; and we will tell the interpretation thereof
+    before the king.
+    </p><p>
+    2:37 Thou, O king, art a king of kings: for the God of heaven hath
+    given thee a kingdom, power, and strength, and glory.
+    </p><p>
+    2:38 And wheresoever the children of men dwell, the beasts of the
+    field and the fowls of the heaven hath he given into thine hand, and
+    hath made thee ruler over them all. Thou art this head of gold.
+    </p><p>
+    2:39 And after thee shall arise another kingdom inferior to thee, and
+    another third kingdom of brass, which shall bear rule over all the
+    earth.
+    </p><p>
+    2:40 And the fourth kingdom shall be strong as iron: forasmuch as iron
+    breaketh in pieces and subdueth all things: and as iron that breaketh
+    all these, shall it break in pieces and bruise.
+    </p><p>
+    2:41 And whereas thou sawest the feet and toes, part of potters' clay,
+    and part of iron, the kingdom shall be divided; but there shall be in
+    it of the strength of the iron, forasmuch as thou sawest the iron
+    mixed with miry clay.
+    </p><p>
+    2:42 And as the toes of the feet were part of iron, and part of clay,
+    so the kingdom shall be partly strong, and partly broken.
+    </p><p>
+    2:43 And whereas thou sawest iron mixed with miry clay, they shall
+    mingle themselves with the seed of men: but they shall not cleave one
+    to another, even as iron is not mixed with clay.
+    </p><p>
+    2:44 And in the days of these kings shall the God of heaven set up a
+    kingdom, which shall never be destroyed: and the kingdom shall not be
+    left to other people, but it shall break in pieces and consume all
+    these kingdoms, and it shall stand for ever.
+    </p><p>
+    2:45 Forasmuch as thou sawest that the stone was cut out of the
+    mountain without hands, and that it brake in pieces the iron, the
+    brass, the clay, the silver, and the gold; the great God hath made
+    known to the king what shall come to pass hereafter: and the dream is
+    certain, and the interpretation thereof sure.
+    </p></td><td><p>
+    7:1 In the first year of Belshazzar king of Babylon Daniel had a dream
+    and visions of his head upon his bed: then he wrote the dream, and
+    told the sum of the matters.
+    </p><p>
+    7:2 Daniel spake and said, I saw in my vision by night, and, behold,
+    the four winds of the heaven strove upon the great sea.
+    </p><p>
+    7:3 And four great beasts came up from the sea, diverse one from
+    another.
+    </p><p>
+    7:4 The first was like a lion, and had eagle's wings: I beheld till
+    the wings thereof were plucked, and it was lifted up from the earth,
+    and made stand upon the feet as a man, and a man's heart was given to
+    it.
+    </p><p>
+    7:5 And behold another beast, a second, like to a bear, and it raised
+    up itself on one side, and it had three ribs in the mouth of it
+    between the teeth of it: and they said thus unto it, Arise, devour
+    much flesh.
+    </p><p>
+    7:6 After this I beheld, and lo another, like a leopard, which had
+    upon the back of it four wings of a fowl; the beast had also four
+    heads; and dominion was given to it.
+    </p><p>
+    7:7 After this I saw in the night visions, and behold a fourth beast,
+    dreadful and terrible, and strong exceedingly; and it had great iron
+    teeth: it devoured and brake in pieces, and stamped the residue with
+    the feet of it: and it was diverse from all the beasts that were
+    before it; and it had ten horns.
+    </p><p>
+    7:8 I considered the horns, and, behold, there came up among them
+    another <span id="horn">little horn</span>, before whom there were three of the first horns
+    plucked up by the roots: and, behold, <span id="horn">in this horn were eyes</span> like the
+    eyes of man, and a mouth speaking great things.
+    </p><p>
+    7:9 I beheld till the thrones were cast down, and the Ancient of days
+    did sit, whose garment was white as snow, and the hair of his head
+    like the pure wool: his throne was like the fiery flame, and his
+    wheels as burning fire.
+    </p><p>
+    7:10 A fiery stream issued and came forth from before him: thousand
+    thousands ministered unto him, and ten thousand times ten thousand
+    stood before him: the judgment was set, and the books were opened.
+    </p><p>
+    7:11 I beheld then because of the voice of <span id="horn">the great words which the
+    horn spake</span>: I beheld even till the beast was slain, and his body
+    destroyed, and given to the burning flame.
+    </p><p>
+    7:12 As concerning the rest of the beasts, they had their dominion
+    taken away: yet their lives were prolonged for a season and time.
+    </p><p>
+    7:13 I saw in the night visions, and, behold, one like the Son of man
+    came with the clouds of heaven, and came to the Ancient of days, and
+    they brought him near before him.
+    </p><p>
+    7:14 And there was given him dominion, and glory, and a kingdom, that
+    all people, nations, and languages, should serve him: his dominion is
+    an everlasting dominion, which shall not pass away, and his kingdom
+    that which shall not be destroyed.
+    </p><p>
+    7:15 I Daniel was grieved in my spirit in the midst of my body, and
+    the visions of my head troubled me.
+    </p><p>
+    7:16 I came near unto one of them that stood by, and asked him the
+    truth of all this. So he told me, and made me know the interpretation
+    of the things.
+    </p><p>
+    7:17 These great beasts, which are four, are four kings, which shall
+    arise out of the earth.
+    </p><p>
+    7:18 But the saints of the most High shall take the kingdom, and
+    possess the kingdom for ever, even for ever and ever.
+    </p><p>
+    7:19 Then I would know the truth of the fourth beast, which was
+    diverse from all the others, exceeding dreadful, whose teeth were of
+    iron, and his nails of brass; which devoured, brake in pieces, and
+    stamped the residue with his feet; 7:20 And of the ten horns that were
+    in his head, and of <span id="horn">the other which came up</span>, and before whom three
+    fell; even of that horn that had eyes, and a mouth that spake very
+    great things, whose look was more stout than his fellows.
+    </p><p>
+    7:21 I beheld, and the same horn made war with the saints, and
+    prevailed against them; 7:22 Until the Ancient of days came, and
+    judgment was given to the saints of the most High; and the time came
+    that the saints possessed the kingdom.
+    </p><p>
+    7:23 Thus he said, The fourth beast shall be the fourth kingdom upon
+    earth, which shall be diverse from all kingdoms, and shall devour the
+    whole earth, and shall tread it down, and break it in pieces.
+    </p><p>
+    7:24 And the ten horns out of this kingdom are ten kings that shall
+    arise: and <span id="horn">another shall rise after them</span>; and he shall be diverse from
+    the first, and he shall subdue three kings.
+    </p><p>
+    7:25 And he shall speak great words against the most High, and shall
+    wear out the saints of the most High, and think to change times and
+    laws: and they shall be given into his hand until <span id="times">a time and times and
+    the dividing of time.</span>
+    </p><p>
+    7:26 But the judgment shall sit, and they shall take away his
+    dominion, to consume and to destroy it unto the end.
+    </p><p>
+    7:27 And the kingdom and dominion, and the greatness of the kingdom
+    under the whole heaven, shall be given to the people of the saints of
+    the most High, whose kingdom is an everlasting kingdom, and all
+    dominions shall serve and obey him.
+    </p><p>
+    7:28 Hitherto is the end of the matter. As for me Daniel, my
+    cogitations much troubled me, and my countenance changed in me: but I
+    kept the matter in my heart.
+    </p></td><td><p>
+    8:1 In the third year of the reign of king Belshazzar a vision
+    appeared unto me, even unto me Daniel, after that which appeared unto
+    me at the first.
+    </p><p>
+    8:2 And I saw in a vision; and it came to pass, when I saw, that I was
+    at Shushan in the palace, which is in the province of Elam; and I saw
+    in a vision, and I was by the river of Ulai.
+    </p><p>
+    8:3 Then I lifted up mine eyes, and saw, and, behold, there stood
+    before the river a ram which had two horns: and the two horns were
+    high; but one was higher than the other, and the higher came up last.
+    </p><p>
+    8:4 I saw the ram pushing westward, and northward, and southward; so
+    that no beasts might stand before him, neither was there any that
+    could deliver out of his hand; but he did according to his will, and
+    became great.
+    </p><p>
+    8:5 And as I was considering, behold, an he goat came from the west on
+    the face of the whole earth, and touched not the ground: and the goat
+    had a notable horn between his eyes.
+    </p><p>
+    8:6 And he came to the ram that had two horns, which I had seen
+    standing before the river, and ran unto him in the fury of his power.
+    </p><p>
+    8:7 And I saw him come close unto the ram, and he was moved with
+    choler against him, and smote the ram, and brake his two horns: and
+    there was no power in the ram to stand before him, but he cast him
+    down to the ground, and stamped upon him: and there was none that
+    could deliver the ram out of his hand.
+    </p><p>
+    8:8 Therefore the he goat waxed very great: and when he was strong,
+    the great horn was broken; and for it came up four notable ones toward
+    the four winds of heaven.
+    </p><p>
+    8:9 And out of one of them came forth <span id="horn">a little horn</span>, which waxed
+    exceeding great, toward the south, and toward the east, and toward the
+    pleasant land.
+    </p><p>
+    8:10 <span id="horn">And it waxed great</span>, even to the host of heaven; and it cast down
+    some of the host and of the stars to the ground, and stamped upon
+    them.
+    </p><p>
+    8:11 Yea, <span id="horn">he magnified himself</span> even to the prince of the host, and by
+    him <span id="sacrifice">the daily sacrifice</span> was taken away, and the place of the sanctuary
+    was cast down.
+    </p><p>
+    8:12 And <span id="horn">an host was given him</span> against <span id="sacrifice">the daily sacrifice</span> by reason
+    of transgression, and it cast down the truth to the ground; and it
+    practised, and prospered.
+    </p><p>
+    8:13 Then I heard one saint speaking, and another saint said unto that
+    certain saint which spake, How long shall be the vision concerning the
+    daily sacrifice, and the transgression of desolation, to give both the
+    sanctuary and the host to be trodden under foot?  8:14 And he said
+    unto me, Unto two thousand and three hundred days; then shall the
+    sanctuary be cleansed.
+    </p><p>
+    8:15 And it came to pass, when I, even I Daniel, had seen the vision,
+    and sought for the meaning, then, behold, there stood before me as the
+    appearance of a man.
+    </p><p>
+    8:16 And I heard a man's voice between the banks of Ulai, which
+    called, and said, Gabriel, make this man to understand the vision.
+    </p><p>
+    8:17 So he came near where I stood: and when he came, I was afraid,
+    and fell upon my face: but he said unto me, Understand, O son of man:
+    for at the time of the end shall be the vision.
+    </p><p>
+    8:18 Now as he was speaking with me, I was in a deep sleep on my face
+    toward the ground: but he touched me, and set me upright.
+    </p><p>
+    8:19 And he said, Behold, I will make thee know what shall be in the
+    last end of the indignation: for at the time appointed the end shall
+    be.
+    </p><p>
+    8:20 The ram which thou sawest having two horns are the kings of Media
+    and Persia.
+    </p><p>
+    8:21 And the rough goat is the king of Grecia: and the great horn that
+    is between his eyes is the first king.
+    </p><p>
+    8:22 Now that being broken, whereas four stood up for it, four
+    kingdoms shall stand up out of the nation, but not in his power.
+    </p><p>
+    8:23 And in the latter time of their kingdom, when the transgressors
+    are come to the full, a king of fierce countenance, and understanding
+    dark sentences, shall stand up.
+    </p><p>
+    8:24 And his power shall be mighty, but not by his own power: and he
+    shall destroy wonderfully, and shall prosper, and practise, and shall
+    destroy the mighty and the holy people.
+    </p><p>
+    8:25 And through his policy also he shall cause craft to prosper in
+    his hand; and he shall magnify himself in his heart, and by peace
+    shall destroy many: he shall also stand up against the Prince of
+    princes; but he shall be broken without hand.
+    </p><p>
+    8:26 And the vision of the evening and the morning which was told is
+    true: wherefore shut thou up the vision; for it shall be for many
+    days.
+    </p><p>
+    8:27 And I Daniel fainted, and was sick certain days; afterward I rose
+    up, and did the king's business; and I was astonished at the vision,
+    but none understood it.
+    </p></td><td><p>
+    9:19 O Lord, hear; O Lord, forgive; O Lord, hearken and do; defer not,
+    for thine own sake, O my God: for thy city and thy people are called
+    by thy name.
+    </p><p>
+    9:20 And whiles I was speaking, and praying, and confessing my sin and
+    the sin of my people Israel, and presenting my supplication before the
+    LORD my God for the holy mountain of my God; 9:21 Yea, whiles I was
+    speaking in prayer, even the man Gabriel, whom I had seen in the
+    vision at the beginning, being caused to fly swiftly, touched me about
+    the time of the evening oblation.
+    </p><p>
+    9:22 And he informed me, and talked with me, and said, O Daniel, I am
+    now come forth to give thee skill and understanding.
+    </p><p>
+    9:23 At the beginning of thy supplications the commandment came forth,
+    and I am come to shew thee; for thou art greatly beloved: therefore
+    understand the matter, and consider the vision.
+    </p><p>
+    9:24 Seventy weeks are determined upon thy people and upon thy holy
+    city, to finish the transgression, and to make an end of sins, and to
+    make reconciliation for iniquity, and to bring in everlasting
+    righteousness, and to seal up the vision and prophecy, and to anoint
+    the most Holy.
+    </p><p>
+    9:25 Know therefore and understand, that from the going forth of the
+    commandment to restore and to build Jerusalem unto the Messiah the
+    Prince shall be seven weeks, and threescore and two weeks: the street
+    shall be built again, and the wall, even in troublous times.
+    </p><p>
+    9:26 And after threescore and two weeks shall Messiah be cut off, but
+    not for himself: and the people of the prince that shall come shall
+    destroy the city and the sanctuary; and the end thereof shall be with
+    a flood, and unto the end of the war desolations are determined.
+    </p><p>
+    9:27 And he shall confirm the covenant with many for one week: and in
+    the midst of the week he shall <span id="sacrifice">cause the sacrifice</span> and the oblation to
+    cease, and for the overspreading of abominations he shall make it
+    desolate, even until the consummation, and that determined shall be
+    poured upon the desolate.
+    </p></td><td>
+    <p>
+    11:23 And after the league made with him he shall work deceitfully:
+    for he shall come up, and shall become strong with a small people.
+    </p><p>
+    11:24 He shall enter peaceably even upon the fattest places of the
+    province; and he shall do that which his fathers have not done, nor
+    his fathers' fathers; he shall scatter among them the prey, and spoil,
+    and riches: yea, and he shall forecast his devices against the strong
+    holds, even for a time.
+    </p><p>
+    11:25 And he shall stir up his power and his courage against the king
+    of the south with a great army; and the king of the south shall be
+    stirred up to battle with a very great and mighty army; but he shall
+    not stand: for they shall forecast devices against him.
+    </p><p>
+    11:26 Yea, they that feed of the portion of his meat shall destroy
+    him, and his army shall overflow: and many shall fall down slain.
+    </p><p>
+    11:27 And both of these kings' hearts shall be to do mischief, and
+    they shall speak lies at one table; but it shall not prosper: for yet
+    the end shall be at the time appointed.
+    </p><p>
+    11:28 Then shall he return into his land with great riches; and his
+    heart shall be against the holy covenant; and he shall do exploits,
+    and return to his own land.
+    </p><p>
+    11:29 At the time appointed he shall return, and come toward the
+    south; but it shall not be as the former, or as the latter.
+    </p><p>
+    11:30 For the ships of Chittim shall come against him: therefore he
+    shall be grieved, and return, and have indignation against the holy
+    covenant: so shall he do; he shall even return, and have intelligence
+    with them that forsake the holy covenant.
+    </p><p>
+    11:31 And arms shall stand on his part, and they shall pollute the
+    sanctuary of strength, and shall take away <span id="sacrifice">the daily sacrifice</span>, and
+    they shall place the abomination that maketh desolate.
+    </p><p>
+    11:32 And such as do wickedly against the covenant shall he corrupt by
+    flatteries: but the people that do know their God shall be strong, and
+    do exploits.
+    </p><p>
+    11:33 And they that understand among the people shall instruct many:
+    yet they shall fall by the sword, and by flame, by captivity, and by
+    spoil, many days.
+    </p><p>
+    11:34 Now when they shall fall, they shall be holpen with a little
+    help: but many shall cleave to them with flatteries.
+    </p><p>
+    11:35 And some of them of understanding shall fall, to try them, and
+    to purge, and to make them white, even to the time of the end: because
+    it is yet for a time appointed.
+    </p><p>
+    11:36 And the king shall do according to his will; and he shall exalt
+    himself, and magnify himself above every god, and shall speak
+    marvellous things against the God of gods, and shall prosper till the
+    indignation be accomplished: for that that is determined shall be
+    done.
+    </p><p>
+    11:37 Neither shall he regard the God of his fathers, nor the desire
+    of women, nor regard any god: for he shall magnify himself above all.
+    </p><p>
+    11:38 But in his estate shall he honour the God of forces: and a god
+    whom his fathers knew not shall he honour with gold, and silver, and
+    with precious stones, and pleasant things.
+    </p><p>
+    11:39 Thus shall he do in the most strong holds with a strange god,
+    whom he shall acknowledge and increase with glory: and he shall cause
+    them to rule over many, and shall divide the land for gain.
+    </p><p>
+    11:40 And at the time of the end shall the king of the south push at
+    him: and the king of the north shall come against him like a
+    whirlwind, with chariots, and with horsemen, and with many ships; and
+    he shall enter into the countries, and shall overflow and pass over.
+    </p><p>
+    11:41 He shall enter also into the glorious land, and many countries
+    shall be overthrown: but these shall escape out of his hand, even
+    Edom, and Moab, and the chief of the children of Ammon.
+    </p><p>
+    11:42 He shall stretch forth his hand also upon the countries: and the
+    land of Egypt shall not escape.
+    </p><p>
+    11:43 But he shall have power over the treasures of gold and of
+    silver, and over all the precious things of Egypt: and the Libyans and
+    the Ethiopians shall be at his steps.
+    </p><p>
+    11:44 But tidings out of the east and out of the north shall trouble
+    him: therefore he shall go forth with great fury to destroy, and
+    utterly to make away many.
+    </p><p>
+    11:45 And he shall plant the tabernacles of his palace between the
+    seas in the glorious holy mountain; yet he shall come to his end, and
+    none shall help him.
+    </p></td><td><p>
+    12:1 And at that time shall Michael stand up, the great prince which
+    standeth for the children of thy people: and there shall be a time of
+    trouble, such as never was since there was a nation even to that same
+    time: and at that time thy people shall be delivered, every one that
+    shall be found written in the book.
+    </p><p>
+    12:2 And many of them that sleep in the dust of the earth shall awake,
+    some to everlasting life, and some to shame and everlasting contempt.
+    </p><p>
+    12:3 And they that be wise shall shine as the brightness of the
+    firmament; and they that turn many to righteousness as the stars for
+    ever and ever.
+    </p><p>
+    12:4 But thou, O Daniel, shut up the words, and seal the book, even to
+    the time of the end: many shall run to and fro, and knowledge shall be
+    increased.
+    </p><p>
+    12:5 Then I Daniel looked, and, behold, there stood other two, the one
+    on this side of the bank of the river, and the other on that side of
+    the bank of the river.
+    </p><p>
+    12:6 And one said to the man clothed in linen, which was upon the
+    waters of the river, How long shall it be to the end of these wonders?
+    12:7 And I heard the man clothed in linen, which was upon the waters
+    of the river, when he held up his right hand and his left hand unto
+    heaven, and sware by him that liveth for ever that it shall be for <span id="times">a
+    time, times, and an half</span>; and when he shall have accomplished to
+    scatter the power of the holy people, all these things shall be
+    finished.
+    </p><p>
+    12:8 And I heard, but I understood not: then said I, O my Lord, what
+    shall be the end of these things?  12:9 And he said, Go thy way,
+    Daniel: for the words are closed up and sealed till the time of the
+    end.
+    </p><p>
+    12:10 Many shall be purified, and made white, and tried; but the
+    wicked shall do wickedly: and none of the wicked shall understand; but
+    the wise shall understand.
+    </p><p>
+    12:11 And from the time that <span id="sacrifice">the daily sacrifice</span> shall be taken away,
+    and the abomination that maketh desolate set up, there shall be <span id="times">a
+    thousand two hundred and ninety days.</span>
+    </p><p>
+    12:12 Blessed is he that waiteth, and cometh to the <span id="times">thousand three
+    hundred and five and thirty days.</span>
+    </p><p>
+    12:13 But go thou thy way till the end be: for thou shalt rest,
+    and stand in thy lot at the end of the days.
+    </p>
+    </td></tr></table>
+
+    <table class="table table-bordered">
+    <caption>The Book of Revelation</caption>
+    <tr><th>fifth & sixth trumpet</th><th>two witnesses</th><th>woman & dragon</th><th>beasts</th><th>great whore</th></tr><td>
+    <p>
+    9:1 And the fifth angel sounded, and
+    I saw a star fall from heaven unto the earth: and to him was given the
+    key of the bottomless pit.
+    </p><p>
+    9:2 And he opened the bottomless pit; and there arose a smoke out of
+    the pit, as the smoke of a great furnace; and the sun and the air were
+    darkened by reason of the smoke of the pit.
+    </p><p>
+    9:3 And there came out of the smoke locusts upon the earth: and unto
+    them was given power, as the scorpions of the earth have power.
+    </p><p>
+    9:4 And it was commanded them that they should not hurt the grass of
+    the earth, neither any green thing, neither any tree; but only those
+    men which have not the seal of God in their foreheads.
+    </p><p>
+    9:5 And to them it was given that they should not kill them, but that
+    they should be tormented five months: and their torment was as the
+    torment of a scorpion, when he striketh a man.
+    </p><p>
+    9:6 And in those days shall men seek death, and shall not find it; and
+    shall desire to die, and death shall flee from them.
+    </p><p>
+    9:7 And the shapes of the locusts were like unto horses prepared unto
+    battle; and on their heads were as it were crowns like gold, and their
+    faces were as the faces of men.
+    </p><p>
+    9:8 And they had hair as the hair of women, and their teeth were as
+    the teeth of lions.
+    </p><p>
+    9:9 And they had breastplates, as it were breastplates of iron; and
+    the sound of their wings was as the sound of chariots of many horses
+    running to battle.
+    </p><p>
+    9:10 And they had tails like unto scorpions, and there were stings in
+    their tails: and their power was to hurt men five months.
+    </p><p>
+    9:11 And they had a king over them, which is the angel of the
+    bottomless pit, whose name in the Hebrew tongue is Abaddon, but in the
+    Greek tongue hath his name Apollyon.
+    </p><p>
+    9:12 One woe is past; and, behold, there come two woes more hereafter.
+    </p><p>
+    9:13 And the sixth angel sounded, and I heard a voice from the four
+    horns of the golden altar which is before God, 9:14 Saying to the
+    sixth angel which had the trumpet, Loose the four angels which are
+    bound in the great river Euphrates.
+    </p><p>
+    9:15 And the four angels were loosed, which were prepared for an hour,
+    and a day, and a month, and a year, for to slay the third part of men.
+    </p><p>
+    9:16 And the number of the army of the horsemen were two hundred
+    thousand thousand: and I heard the number of them.
+    </p><p>
+    9:17 And thus I saw the horses in the vision, and them that sat on
+    them, having breastplates of fire, and of jacinth, and brimstone: and
+    the heads of the horses were as the heads of lions; and out of their
+    mouths issued fire and smoke and brimstone.
+    </p><p>
+    9:18 By these three was the third part of men killed, by the fire, and
+    by the smoke, and by the brimstone, which issued out of their mouths.
+    </p><p>
+    9:19 For their power is in their mouth, and in their tails: for their
+    tails were like unto serpents, and had heads, and with them they do
+    hurt.
+    </p><p>
+    9:20 And the rest of the men which were not killed by these plagues
+    yet repented not of the works of their hands, that they should not
+    worship devils, and idols of gold, and silver, and brass, and stone,
+    and of wood: which neither can see, nor hear, nor walk: 9:21 Neither
+    repented they of their murders, nor of their sorceries, nor of their
+    fornication, nor of their thefts.
+    </p>
+    </td><td>
+    <p>
+    11:1 And there was given me a reed like unto a rod: and the angel
+    stood, saying, Rise, and measure the temple of God, and the altar, and
+    them that worship therein.
+    </p><p>
+    11:2 But the court which is without the temple leave out, and measure
+    it not; for it is given unto the Gentiles: and the holy city shall
+    they tread under foot <span id="times">forty and two months.</span>
+    </p><p>
+    11:3 And I will give power unto my two witnesses, and they shall
+    prophesy <span id="times">a thousand two hundred and threescore days,</span> clothed in
+    sackcloth.
+    </p><p>
+    11:4 These are the two olive trees, and the two candlesticks standing
+    before the God of the earth.
+    </p><p>
+    11:5 And if any man will hurt them, fire proceedeth out of their
+    mouth, and devoureth their enemies: and if any man will hurt them, he
+    must in this manner be killed.
+    </p><p>
+    11:6 These have power to shut heaven, that it rain not in the days of
+    their prophecy: and have power over waters to turn them to blood, and
+    to smite the earth with all plagues, as often as they will.
+    </p><p>
+    11:7 And when they shall have finished their testimony, the beast that
+    ascendeth out of the bottomless pit shall make war against them, and
+    shall overcome them, and kill them.
+    </p><p>
+    11:8 And their dead bodies shall lie in the street of the great city,
+    which spiritually is called Sodom and Egypt, where also our Lord was
+    crucified.
+    </p><p>
+    11:9 And they of the people and kindreds and tongues and nations shall
+    see their dead bodies three days and an half, and shall not suffer
+    their dead bodies to be put in graves.
+    </p><p>
+    11:10 And they that dwell upon the earth shall rejoice over them, and
+    make merry, and shall send gifts one to another; because these two
+    prophets tormented them that dwelt on the earth.
+    </p><p>
+    11:11 And after three days and an half the spirit of life from God
+    entered into them, and they stood upon their feet; and great fear fell
+    upon them which saw them.
+    </p><p>
+    11:12 And they heard a great voice from heaven saying unto them, Come
+    up hither. And they ascended up to heaven in a cloud; and their
+    enemies beheld them.
+    </p><p>
+    11:13 And the same hour was there a great earthquake, and the tenth
+    part of the city fell, and in the earthquake were slain of men seven
+    thousand: and the remnant were affrighted, and gave glory to the God
+    of heaven.
+    </p><p>
+    11:14 The second woe is past; and, behold, the third woe cometh
+    quickly.
+    </p><p>
+    11:15 And the seventh angel sounded; and there were great voices in
+    heaven, saying, The kingdoms of this world are become the kingdoms of
+    our Lord, and of his Christ; and he shall reign for ever and ever.
+    </p><p>
+    11:16 And the four and twenty elders, which sat before God on their
+    seats, fell upon their faces, and worshipped God, 11:17 Saying, We
+    give thee thanks, O LORD God Almighty, which art, and wast, and art to
+    come; because thou hast taken to thee thy great power, and hast
+    reigned.
+    </p><p>
+    11:18 And the nations were angry, and thy wrath is come, and the time
+    of the dead, that they should be judged, and that thou shouldest give
+    reward unto thy servants the prophets, and to the saints, and them
+    that fear thy name, small and great; and shouldest destroy them which
+    destroy the earth.
+    </p><p>
+    11:19 And the temple of God was opened in heaven, and there was seen
+    in his temple the ark of his testament: and there were lightnings, and
+    voices, and thunderings, and an earthquake, and great hail.
+    </p>
+    </td><td>
+    <p>
+    12:1 And there appeared a great wonder in heaven; a woman clothed with
+    the sun, and the moon under her feet, and upon her head a crown of
+    twelve stars: 12:2 And she being with child cried, travailing in
+    birth, and pained to be delivered.
+    </p><p>
+    12:3 And there appeared another wonder in heaven; and behold a great
+    red dragon, having seven heads and ten horns, and seven crowns upon
+    his heads.
+    </p><p>
+    12:4 And his tail drew the third part of the stars of heaven, and did
+    cast them to the earth: and the dragon stood before the woman which
+    was ready to be delivered, for to devour her child as soon as it was
+    born.
+    </p><p>
+    12:5 And she brought forth a man child, who was to rule all nations
+    with a rod of iron: and her child was caught up unto God, and to his
+    throne.
+    </p><p>
+    12:6 And the woman fled into the wilderness, where she hath a place
+    prepared of God, that they should feed her there <span id="times">a thousand two
+    hundred and threescore days.</span>
+    </p><p>
+    12:7 And there was war in heaven: Michael and his angels fought
+    against the dragon; and the dragon fought and his angels, 12:8 And
+    prevailed not; neither was their place found any more in heaven.
+    </p><p>
+    12:9 And the great dragon was cast out, that old serpent, called the
+    Devil, and Satan, which deceiveth the whole world: he was cast out
+    into the earth, and his angels were cast out with him.
+    </p><p>
+    12:10 And I heard a loud voice saying in heaven, Now is come
+    salvation, and strength, and the kingdom of our God, and the power of
+    his Christ: for the accuser of our brethren is cast down, which
+    accused them before our God day and night.
+    </p><p>
+    12:11 And they overcame him by the blood of the Lamb, and by the word
+    of their testimony; and they loved not their lives unto the death.
+    </p><p>
+    12:12 Therefore rejoice, ye heavens, and ye that dwell in them. Woe to
+    the inhabiters of the earth and of the sea! for the devil is come down
+    unto you, having great wrath, because he knoweth that he hath but a
+    short time.
+    </p><p>
+    12:13 And when the dragon saw that he was cast unto the earth, he
+    persecuted the woman which brought forth the man child.
+    </p><p>
+    12:14 And to the woman were given two wings of a great eagle, that she
+    might fly into the wilderness, into her place, where she is nourished
+    for <span id="times">a time, and times, and half a time,</span> from the face of the serpent.
+    </p><p>
+    12:15 And the serpent cast out of his mouth water as a flood after the
+    woman, that he might cause her to be carried away of the flood.
+    </p><p>
+    12:16 And the earth helped the woman, and the earth opened her mouth,
+    and swallowed up the flood which the dragon cast out of his mouth.
+    </p><p>
+    12:17 And the dragon was wroth with the woman, and went to make war
+    with the remnant of her seed, which keep the commandments of God, and
+    have the testimony of Jesus Christ.	
+    </p>
+    </td><td>
+    <p>
+    13:1 And I stood upon the sand of the sea, and saw a beast rise up out
+    of the sea, having seven heads and ten horns, and upon his horns ten
+    crowns, and upon his heads the name of blasphemy.
+    </p><p>
+    13:2 And the beast which I saw was like unto a leopard, and his feet
+    were as the feet of a bear, and his mouth as the mouth of a lion: and
+    the dragon gave him his power, and his seat, and great authority.
+    </p><p>
+    13:3 And I saw one of his heads as it were wounded to death; and his
+    deadly wound was healed: and all the world wondered after the beast.
+    </p><p>
+    13:4 And they worshipped the dragon which gave power unto the beast:
+    and they worshipped the beast, saying, Who is like unto the beast? who
+    is able to make war with him?  13:5 And there was given unto him a
+    mouth speaking great things and blasphemies; and power was given unto
+    him to continue <span id="times">forty and two months.</span>
+    </p><p>
+    13:6 And he opened his mouth in blasphemy against God, to blaspheme
+    his name, and his tabernacle, and them that dwell in heaven.
+    </p><p>
+    13:7 And it was given unto him to make war with the saints, and to
+    overcome them: and power was given him over all kindreds, and tongues,
+    and nations.
+    </p><p>
+    13:8 And all that dwell upon the earth shall worship him, whose names
+    are not written in the book of life of the Lamb slain from the
+    foundation of the world.
+    </p><p>
+    13:9 If any man have an ear, let him hear.
+    </p><p>
+    13:10 He that leadeth into captivity shall go into captivity: he that
+    killeth with the sword must be killed with the sword. Here is the
+    patience and the faith of the saints.
+    </p><p>
+    13:11 And I beheld another beast coming up out of the earth; and he
+    had two horns like a lamb, and he spake as a dragon.
+    </p><p>
+    13:12 And he exerciseth all the power of the first beast before him,
+    and causeth the earth and them which dwell therein to worship the
+    first beast, whose deadly wound was healed.
+    </p><p>
+    13:13 And he doeth great wonders, so that he maketh fire come down
+    from heaven on the earth in the sight of men, 13:14 And deceiveth them
+    that dwell on the earth by the means of those miracles which he had
+    power to do in the sight of the beast; saying to them that dwell on
+    the earth, that they should make an image to the beast, which had the
+    wound by a sword, and did live.
+    </p><p>
+    13:15 And he had power to give life unto the image of the beast, that
+    the image of the beast should both speak, and cause that as many as
+    would not worship the image of the beast should be killed.
+    </p><p>
+    13:16 And he causeth all, both small and great, rich and poor, free
+    and bond, to receive a mark in their right hand, or in their
+    foreheads: 13:17 And that no man might buy or sell, save he that had
+    the mark, or the name of the beast, or the number of his name.
+    </p><p>
+    13:18 Here is wisdom. Let him that hath understanding count the number
+    of the beast: for it is the number of a man; and his number is Six
+    hundred threescore and six.	
+    </p>
+    </td><td>
+    <p>
+    17:1 And there came one of the seven angels which had the seven vials,
+    and talked with me, saying unto me, Come hither; I will shew unto thee
+    the judgment of the great whore that sitteth upon many waters: 17:2
+    With whom the kings of the earth have committed fornication, and the
+    inhabitants of the earth have been made drunk with the wine of her
+    fornication.
+    </p><p>
+    17:3 So he carried me away in the spirit into the wilderness: and I
+    saw a woman sit upon a scarlet coloured beast, full of names of
+    blasphemy, having seven heads and ten horns.
+    </p><p>
+    17:4 And the woman was arrayed in purple and scarlet colour, and
+    decked with gold and precious stones and pearls, having a golden cup
+    in her hand full of abominations and filthiness of her fornication:
+    17:5 And upon her forehead was a name written, MYSTERY, BABYLON THE
+    GREAT, THE MOTHER OF HARLOTS AND ABOMINATIONS OF THE EARTH.
+    </p><p>
+    17:6 And I saw the woman drunken with the blood of the saints, and
+    with the blood of the martyrs of Jesus: and when I saw her, I wondered
+    with great admiration.
+    </p><p>
+    17:7 And the angel said unto me, Wherefore didst thou marvel? I will
+    tell thee the mystery of the woman, and of the beast that carrieth
+    her, which hath the seven heads and ten horns.
+    </p><p>
+    17:8 The beast that thou sawest was, and is not; and shall ascend out
+    of the bottomless pit, and go into perdition: and they that dwell on
+    the earth shall wonder, whose names were not written in the book of
+    life from the foundation of the world, when they behold the beast that
+    was, and is not, and yet is.
+    </p><p>
+    17:9 And here is the mind which hath wisdom. The seven heads are seven
+    mountains, on which the woman sitteth.
+    </p><p>
+    17:10 And there are seven kings: five are fallen, and one is, and the
+    other is not yet come; and when he cometh, he must continue a short
+    space.
+    </p><p>
+    17:11 And the beast that was, and is not, even he is the eighth, and
+    is of the seven, and goeth into perdition.
+    </p><p>
+    17:12 And the ten horns which thou sawest are ten kings, which have
+    received no kingdom as yet; but receive power as kings one hour with
+    the beast.
+    </p><p>
+    17:13 These have one mind, and shall give their power and strength
+    unto the beast.
+    </p><p>
+    17:14 These shall make war with the Lamb, and the Lamb shall overcome
+    them: for he is Lord of lords, and King of kings: and they that are
+    with him are called, and chosen, and faithful.
+    </p><p>
+    17:15 And he saith unto me, The waters which thou sawest, where the
+    whore sitteth, are peoples, and multitudes, and nations, and tongues.
+    </p><p>
+    17:16 And the ten horns which thou sawest upon the beast, these shall
+    hate the whore, and shall make her desolate and naked, and shall eat
+    her flesh, and burn her with fire.
+    </p><p>
+    17:17 For God hath put in their hearts to fulfil his will, and to
+    agree, and give their kingdom unto the beast, until the words of God
+    shall be fulfilled.
+    </p><p>
+    17:18 And the woman which thou sawest is that great city, which
+    reigneth over the kings of the earth.	
+    </p>
+    </td></tr></table>
+</div>
+</body>
+</html>
