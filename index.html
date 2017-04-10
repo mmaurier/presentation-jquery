@@ -38,75 +38,46 @@
         }
 </style>
 <script type="text/javascript" >
-    var showTimes = false;
-    var showSacrifice = false;
-    var showHorn = false;
-    var showBeasts = false;
-    var show666 = false;
-    var showWoe = false;
 
     $(document).ready(function () {
         setInitState();
+        $("#danrev_text").show();
         /****** button click events *******/
+        /* dan/rev */
+        $("#danrev_label").click(function () { setInitState(); $("#danrev_text").show(); });  
         /* times */
-        $("#times_label").click(function () { setLabel("times"); });        
+        $("#times_label").click(function () { setInitState(); $("#times_text").show(); });        
         /* horn */
-        $("#horn_label").click(function () { setLabel("horns"); });          
+        $("#horn_label").click(function () { setInitState(); $("#horn_text").show(); });          
         /* sacrifice */
-        $("#sacrifice_label").click(function () { setLabel("sacrifice"); });                              
+        $("#sacrifice_label").click(function () { setInitState(); $("#sacrifice_text").show(); });                              
         /* beasts */
-        $("#beasts_label").click(function () { setLabel("beasts"); });        
+        $("#beasts_label").click(function () { setInitState(); $("#beasts_text").show(); });        
         /* 666 */
-        $("#sixsixsix_label").click(function () { setLabel("sixsixsix"); });     
+        $("#sixsixsix_label").click(function () { setInitState(); $("#sixsixsix_text").show(); });     
         /* woe */
-        $("#woe_label").click(function () { setLabel("woe"); });     
+        $("#woe_label").click(function () { setInitState(); $("#woe_text").show(); });     
+        /* witnesses */
+        $("#witnesses_label").click(function () { setInitState(); $("#witnesses_text").show(); });  
+        /* harlot */
+        $("#harlot_label").click(function () { setInitState(); $("#harlot_text").show(); });  
+        /* mark */
+        $("#mark_label").click(function () { setInitState(); $("#mark_text").show(); });                          
     });
 
     function setInitState(){
+        $("#danrev_text").hide();
         $("#times_text").hide();
         $("#horn_text").hide();
         $("#sacrifice_text").hide();        
         $("#beasts_text").hide();
         $("#sixsixsix_text").hide();
         $("#woe_text").hide();
+        $("#witnesses_text").hide();
+        $("#harlot_text").hide();
+        $("#mark_text").hide();
     }
 
-    function setLabel(label) {
-		setInitState();
-
-    	switch(label) {
-    		case "times": 
-    	 		if (showTimes) { $("#whole_text").show(); }
-            	else { $("#whole_text").hide();  $("#times_text").show(); }
-            	showTimes =! showTimes;	
-            	break;
-    	 	case "horns": 
-    	 		if (showHorn) { $("#whole_text").show(); }
-            	else { $("#whole_text").hide();  $("#horn_text").show(); }
-            	showHorn =! showHorn;	
-            	break;            	
-    	 	case "sacrifice": 
-    	 		if (showSacrifice) { $("#whole_text").show(); }
-            	else { $("#whole_text").hide();  $("#sacrifice_text").show(); }
-            	showSacrifice =! showSacrifice;	
-            	break;             	
-    	 	case "beasts": 
-    	 		if (showBeasts) { $("#whole_text").show(); }
-            	else { $("#whole_text").hide();  $("#beasts_text").show(); }
-            	showBeasts =! showBeasts;	
-            	break;  
-    	 	case "sixsixsix": 
-    	 		if (show666) { $("#whole_text").show(); }
-            	else { $("#whole_text").hide();  $("#sixsixsix_text").show(); }
-            	show666 =! show666;	
-            	break;  
-    	 	case "woe": 
-    	 		if (showWoe) { $("#whole_text").show(); }
-            	else { $("#whole_text").hide();  $("#woe_text").show(); }
-            	showWoe =! showWoe;	
-            	break;              	            	            	
-    	 }
-    }
 </script>
 </head>
 <body>
@@ -121,6 +92,81 @@
 <span class="label label-success" id="witnesses_label">witnesses</span>
 <span class="label label-success" id="harlot_label">harlot</span>
 <span class="label label-success" id="mark_label">mark</span>
+
+<div id="mark_text">
+    <table class="table table-bordered">
+    <caption>mark</caption>
+    <tr><th>text</th><th>text</th><th>text</th><th>text</th><th>text</th><th>text</th></tr>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>summary</p>
+    </td>
+    <td width="25%">
+        <p>summary</p>
+    </td></tr>
+    </table>
+</div>
+
+<div id="harlot_text">
+    <table class="table table-bordered">
+    <caption>harlot</caption>
+    <tr><th>text</th><th>text</th><th>text</th><th>text</th><th>text</th><th>text</th></tr>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>summary</p>
+    </td>
+    <td width="25%">
+        <p>summary</p>
+    </td></tr>
+    </table>
+</div>
+
+<div id="witnesses_text">
+    <table class="table table-bordered">
+    <caption>text</caption>
+    <tr><th>text</th><th>text</th><th>text</th><th>text</th><th>text</th><th>text</th></tr>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>text</p>
+    </td>
+    <td width="15%">
+        <p>summary</p>
+    </td>
+    <td width="25%">
+        <p>summary</p>
+    </td></tr>
+    </table>
+</div>
 
 <div id="woe_text">
     <table class="table table-bordered">
@@ -193,7 +239,7 @@
 
 <div id="beasts_text">
     <table class="table table-bordered">
-    <caption>Statue and Beasts</caption>
+    <caption>statue and beasts</caption>
     <tr><th>statue</th><th>four beasts</th><th>ram & goat</th><th>two beasts</th><th>great whore</th><th>summary</th></tr>
     <td width="15%">
         <p>
@@ -617,10 +663,11 @@
     </td></tr>
     </table>
 </div>
+
 <div id="horn_text">
 
     <table class="table table-bordered">
-    <caption>The Book of Daniel</caption>
+    <caption>little horn</caption>
     <tr>
         <th>four beasts</th>
         <th>ram & goat</th>
@@ -697,10 +744,11 @@
     </tr>
     </table>
 </div>
+
 <div id="times_text">
 
     <table class="table table-bordered">
-    <caption>The Book of Daniel</caption>
+    <caption>times</caption>
     <tr>
         <th>four beasts</th>
         <th>time of trouble</th>
@@ -863,9 +911,10 @@
     </tr>
     </table>
 </div>
+
 <div id="sacrifice_text">
     <table class="table table-bordered">
-    <caption>The Book of Daniel</caption>
+    <caption>sacrifice</caption>
     <tr>
         <th>ram & goat</th>
         <th>prayer</th>
@@ -930,9 +979,9 @@
     </td> 
     </tr>
     </table>
-
 </div>
-<div id="whole_text">
+
+<div id="danrev_text">
     <table class="table table-bordered">
     <caption>The Book of Daniel</caption>
     <tr><th>statue</th><th>four beasts</th><th>ram & goat</th><th>prayer</th><th>north south</th><th>time of
@@ -1746,6 +1795,7 @@
     reigneth over the kings of the earth.	
     </p>
     </td></tr></table>
+
 </div>
 </body>
 </html>
