@@ -9,6 +9,7 @@
     <style type="text/css">
         body {
             margin: 0;
+            background-color: #F1E7E5;
         }
         #times { 
             background-color: red;
@@ -22,7 +23,8 @@
         #beasts { 
             background-color: lawngreen;
         }                  
-        #times_label, #sacrifice_label, #horn_label, #beasts_label, #sixsixsix_label {
+        #danrev_label, #times_label, #sacrifice_label, #horn_label, #beasts_label, 
+        #sixsixsix_label, #woe_label, #witnesses_label, #harlot_label, #mark_label {
             font-size: 16px;
         }
         .lb-md {
@@ -31,47 +33,33 @@
         .lb-lg {
             font-size: 20px;
         }      
+        .highLigthOrange {
+        	background-color: aqua;
+        }
 </style>
 <script type="text/javascript" >
     var showTimes = false;
-    var showHorn = false;
     var showSacrifice = false;
+    var showHorn = false;
     var showBeasts = false;
     var show666 = false;
+    var showWoe = false;
 
     $(document).ready(function () {
         setInitState();
         /****** button click events *******/
         /* times */
-        $("#times_label").click(function () {
-            if (showTimes) { $("#whole_text").show(); $("#sacrifice_text").hide(); $("#horn_text").hide(); $("#times_text").hide(); $("#beasts_text").hide(); }
-            else { $("#whole_text").hide();  $("#sacrifice_text").hide(); $("#horn_text").hide(); $("#beasts_text").hide(); $("#times_text").show(); }
-            showTimes =! showTimes;            
-        });        
-        /* sacrifice */
-        $("#sacrifice_label").click(function () {
-            if (showSacrifice) { $("#whole_text").show(); $("#horn_text").hide(); $("#times_text").hide(); $("#sacrifice_text").hide(); $("#beasts_text").hide(); $("#sixsixsix_text").hide(); }
-            else { $("#whole_text").hide();  $("#horn_text").hide(); $("#times_text").hide(); $("#beasts_text").hide(); $("#sixsixsix_text").hide(); $("#sacrifice_text").show(); }            
-            showSacrifice =! showSacrifice;
-        });        
+        $("#times_label").click(function () { setLabel("times"); });        
         /* horn */
-        $("#horn_label").click(function () {
-            if (showHorn) { $("#whole_text").show(); $("#sacrifice_text").hide(); $("#times_text").hide(); $("#horn_text").hide(); $("#beasts_text").hide(); $("#sixsixsix_text").hide(); }
-            else { $("#whole_text").hide(); $("#sacrifice_text").hide(); $("#times_text").show(); $("#beasts_text").hide(); $("#sixsixsix_text").hide(); $("#horn_text").show(); }
-            showHorn =! showHorn;
-        });                        
+        $("#horn_label").click(function () { setLabel("horns"); });          
+        /* sacrifice */
+        $("#sacrifice_label").click(function () { setLabel("sacrifice"); });                              
         /* beasts */
-        $("#beasts_label").click(function () {
-            if (showBeasts) { $("#whole_text").show(); $("#sacrifice_text").hide(); $("#times_text").hide(); $("#horn_text").hide(); $("#beasts_text").hide(); $("#sixsixsix_text").hide(); }
-            else { $("#whole_text").hide(); $("#horn_text").hide(); $("#sacrifice_text").hide(); $("#times_text").hide(); $("#sixsixsix_text").hide(); $("#beasts_text").show(); }
-            showBeasts =! showBeasts;
-        });        
+        $("#beasts_label").click(function () { setLabel("beasts"); });        
         /* 666 */
-        $("#sixsixsix_label").click(function () {
-            if (show666) { $("#whole_text").show(); $("#sacrifice_text").hide(); $("#times_text").hide(); $("#horn_text").hide(); $("#beasts_text").hide(); $("#sixsixsix_text").hide(); }
-            else { $("#whole_text").hide(); $("#horn_text").hide(); $("#sacrifice_text").hide(); $("#times_text").hide(); $("#beasts_text").hide(); $("#sixsixsix_text").show(); }
-            show666 =! show666;
-        });         
+        $("#sixsixsix_label").click(function () { setLabel("sixsixsix"); });     
+        /* woe */
+        $("#woe_label").click(function () { setLabel("woe"); });     
     });
 
     function setInitState(){
@@ -80,26 +68,113 @@
         $("#sacrifice_text").hide();        
         $("#beasts_text").hide();
         $("#sixsixsix_text").hide();
+        $("#woe_text").hide();
+    }
+
+    function setLabel(label) {
+		setInitState();
+
+    	switch(label) {
+    		case "times": 
+    	 		if (showTimes) { $("#whole_text").show(); }
+            	else { $("#whole_text").hide();  $("#times_text").show(); }
+            	showTimes =! showTimes;	
+            	break;
+    	 	case "horns": 
+    	 		if (showHorn) { $("#whole_text").show(); }
+            	else { $("#whole_text").hide();  $("#horn_text").show(); }
+            	showHorn =! showHorn;	
+            	break;            	
+    	 	case "sacrifice": 
+    	 		if (showSacrifice) { $("#whole_text").show(); }
+            	else { $("#whole_text").hide();  $("#sacrifice_text").show(); }
+            	showSacrifice =! showSacrifice;	
+            	break;             	
+    	 	case "beasts": 
+    	 		if (showBeasts) { $("#whole_text").show(); }
+            	else { $("#whole_text").hide();  $("#beasts_text").show(); }
+            	showBeasts =! showBeasts;	
+            	break;  
+    	 	case "sixsixsix": 
+    	 		if (show666) { $("#whole_text").show(); }
+            	else { $("#whole_text").hide();  $("#sixsixsix_text").show(); }
+            	show666 =! show666;	
+            	break;  
+    	 	case "woe": 
+    	 		if (showWoe) { $("#whole_text").show(); }
+            	else { $("#whole_text").hide();  $("#woe_text").show(); }
+            	showWoe =! showWoe;	
+            	break;              	            	            	
+    	 }
     }
 </script>
 </head>
 <body>
 
+<span class="label label-danger" id="danrev_label">Daniel/Revelation</span>
 <span class="label label-danger" id="times_label">times</span>
 <span class="label label-warning" id="sacrifice_label">sacrifice</span>
 <span class="label label-info" id="horn_label">little horn</span>
 <span class="label label-success" id="beasts_label">beasts</span>
 <span class="label label-success" id="sixsixsix_label">666</span>
+<span class="label label-success" id="woe_label">woe</span>
+<span class="label label-success" id="witnesses_label">witnesses</span>
+<span class="label label-success" id="harlot_label">harlot</span>
+<span class="label label-success" id="mark_label">mark</span>
+
+<div id="woe_text">
+    <table class="table table-bordered">
+    <caption>woe</caption>
+    <tr><th>meaning</th><th>first woe</th><th>second woe</th><th>third woe</th><th>blank</th><th>summary</th></tr>
+    <td width="15%">
+        <p>Numbers 21:29 Woe to you, Moab! You are destroyed, people of Chemosh! </p>
+        <p>Job 10:15 If I am guilty woe to me! Even if I am innocent, I cannot lift my head, for I am full of shame and drowned in my affliction.</p>
+        <p>Isaiah 33:1 Woe to you, destroyer, you who have not been destroyed! Woe to you, betrayer, you who have not been betrayed!</p>
+        <p>Ezekiel 34:2 Woe to you shepherds of Israel who only take care of yourselves!</p>
+        <p>Amos 6:1  Woe to you who are complacent in Zion, and to you who feel secure on Mount Samaria, you notable men of the foremost nation, to whom the people of Israel come!</p>
+        <p>Matthew 23:13 Woe to you, teachers of the law and Pharisees, you hypocrites!</p>
+        <p>Revelation 8:13 As I watched, I heard an eagle that was flying in midair call out in a loud voice: “<strong>Woe! Woe! Woe</strong> to the inhabitants of the earth, because of the trumpet blasts about to be sounded by the other three angels!         
+    </td>
+    <td width="15%">
+        <p>Rev 9:1,2 The fifth angel sounded his trumpet, and I saw a star that had fallen from the sky to the earth. The star was given the key to the shaft of the Abyss.  When he opened the Abyss, smoke rose from it like the smoke from a gigantic furnace. The sun and sky were darkened by the smoke from the Abyss.</p>
+        <p>Reve 9:12 The first <strong>woe</strong> is past; two other woes are yet to come.</p>
+    </td>
+    <td width="15%">
+        <p>Rev 9:13 The sixth angel sounded his trumpet, and I heard a voice coming from the four horns of the golden altar that is before God. 14 It said to the sixth angel who had the trumpet, “Release the four angels who are bound at the great river Euphrates.”</p>
+        <p>Rev 11:14 The second <strong>woe</strong> has passed; the third woe is coming soon.</p>
+    </td>
+    <td width="15%">
+        <p>Rev 12:12 Therefore rejoice, you heavens and you who dwell in them! But <strong>woe</strong> to the earth and the sea, because the devil has gone down to you! He is filled with fury, because he knows that his time is short.</p>
+        <p>Reve 12:15 The seventh angel sounded his trumpet, and there were loud voices in heaven, which said: “The kingdom of the world has become the kingdom of our Lord and of his Messiah, and he will reign for ever and ever.”</p>
+    </td>
+    <td width="15%">
+        <p>summary</p>
+    </td>
+    <td width="25%">
+        <p>summary</p>
+    </td></tr>
+    </table>
+</div>
 
 <div id="sixsixsix_text">
     <table class="table table-bordered">
     <caption>666</caption>
     <tr><th>count</th><th>number of a man</th><th>Solomon</th><th>beast</th><th>blank</th><th>summary</th></tr>
     <td width="15%">
-        <p>text</p>
+        <p>Eccl 7:27 Adding one thing to another to discover the scheme of things</p>
+        <p>Eccl 7 is the 666th chapter of the Bible</p>
+        <p>Rev 13:18 This calls for wisdom. Let the person who has insight 
+        	<span class="highLigthOrange">calculate the number of the beast</span>, for it is the 
+        	<span class="highLigthOrange">number of a man</span>. That number is 666.</p>
+        <p>666 is mentioned in OT:</p>
+        <ul><li>1 Kings 10:14 The weight of the gold that Solomon received yearly was 666 talents</li>
+        <li>2 Chronicles 9:13 The weight of the gold that Solomon received yearly was 666 talents</li>
+		<li>Ezra 2:13 The children of Adonikam(the lord is risen), 666</li>		
+		</ul>
+		<p>2 Chronicles 9:22 So King Solomon became greater than all the kings of the earth in riches and wisdom</p>
     </td>
     <td width="15%">
-        <p>text</p>
+        <p>If we count every unique indidual in the Bible starting from Adam, such Adam is number one, Eve number two, and continue, the 666th person is Solomon.</p>
     </td>
     <td width="15%">
         <p>text</p>
@@ -1674,3 +1749,4 @@
 </div>
 </body>
 </html>
+
